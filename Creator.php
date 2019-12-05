@@ -42,12 +42,12 @@
  * </code>
  */
 
-namespace adamasantares\dxf;
+namespace olivierlb\phpdxf;
 
 
 /**
  * Class Creator
- * @package adamasantares\dxf
+ * @package olivierlb\phpdxf
  */
 class Creator {
 

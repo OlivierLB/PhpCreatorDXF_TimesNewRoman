@@ -12,12 +12,12 @@
  * @see http://www.autodesk.com/techpubs/autocad/acad2000/dxf/
  */
 
-namespace adamasantares\dxf;
+namespace olivierlb\phpdxf;
 
 
 /**
  * Class Color
- * @package adamasantares\dxf
+ * @package olivierlb\phpdxf
  */
 class Color {
 
