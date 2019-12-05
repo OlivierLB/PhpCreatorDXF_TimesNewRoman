@@ -16,7 +16,7 @@
   	},
   	"autoload": {
   		"psr-4": {
-  			"PhpCreatorDXF_TimesNewRoman\\dxf\\": ""
+  			"olivierlb\\phpdxf\\": ""
   		}
   	}
 }
