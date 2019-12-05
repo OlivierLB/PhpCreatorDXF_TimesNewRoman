@@ -7,9 +7,9 @@ require dirname(__FILE__) . '/../Color.php';
 require dirname(__FILE__) . '/../LineType.php';
 require dirname(__FILE__) . '/../Creator.php';
 
-use adamasantares\dxf\Creator;
-use adamasantares\dxf\Color;
-use adamasantares\dxf\LineType;
+use olivierlb\phpdxf\Creator;
+use olivierlb\phpdxf\Color;
+use olivierlb\phpdxf\LineType;
 
 (new Creator())
     ->setColor(Color::rgb(0, 100, 0))
@@ -29,5 +29,3 @@ use adamasantares\dxf\LineType;
     ->saveToFile(dirname(__FILE__) . '/demo2.dxf');
 
 exit("   Done (" . dirname(__FILE__) . "/demo2.dxf)\n");
-
-
