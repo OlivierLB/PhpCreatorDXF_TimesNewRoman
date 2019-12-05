@@ -54,5 +54,5 @@ See "demo" directory of project.
 ## Install by Composer
 
 ```
-composer require olivierlb/phpdxf "1.0.0"
+composer require olivierlb/phpdxf "1.0.1"
 ```
