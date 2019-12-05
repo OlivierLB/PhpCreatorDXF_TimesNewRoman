@@ -1,9 +1,8 @@
 {
-    "name": "olivierlb/adamasantaresroman",
+    "name": "olivierlb/phpdxf",
   	"keywords": ["php", "dxf"],
   	"homepage": "https://github.com/OlivierLB/PhpCreatorDXF_TimesNewRoman/blob/master/README.md",
   	"type": "library",
-    "type": "library",
     "license": "MIT",
     "authors": [
         {
