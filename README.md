@@ -50,3 +50,9 @@ $dxf->setColor(Color::rgb(0, 100, 0))
 <img src="https://raw.githubusercontent.com/active-programming/DXF-Creator-for-PHP/master/demo/ellipse3.png" alt="" />
 
 See "demo" directory of project.
+
+## Install by Composer
+
+```
+composer require olivierlb/phpdxf "0.1.5"
+```
