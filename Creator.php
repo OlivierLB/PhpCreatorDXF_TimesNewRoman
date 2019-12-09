@@ -615,10 +615,11 @@ class Creator {
      * Add polyline to current layer.
      * @param array[float] $points Points array: [x, y, x2, y2, x3, y3, ...]
      * @param int $flag Polyline flag (bit-coded); default is 0: 1 = Closed; 128 = Plinegen
+     * @param int $width Polyline width : default = 0
      * @return $this
      * @see http://help.autodesk.com/cloudhelp/2016/ENU/AutoCAD-DXF/files/GUID-ABF6B778-BE20-4B49-9B58-A94E64CEFFF3.htm
      */
-    public function addPolyline($points, $flag = 0)
+    public function addPolyline($points, $flag = 0, $width = 0)
     {
         $count = count($points);
         if ($count > 2 && ($count % 2) == 0) {
@@ -636,8 +637,8 @@ class Creator {
                 "{$dots}\n" .
                 "70\n" . // Polyline flag (bit-coded); default is 0: 1 = Closed; 128 = Plinegen
                 "{$flag}\n" .
-                "43\n" . // Constant width (optional; default = 0).
-                "0\n" .
+                "43\n" . // Constant width
+                "{$width}\n" .
                 "38\n" . // Elevation (optional; default = 0)
                 "0\n" .
                 "39\n" . // Thickness (optional; default = 0)
