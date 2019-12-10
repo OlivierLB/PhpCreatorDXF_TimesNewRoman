@@ -616,10 +616,11 @@ class Creator {
      * @param array[float] $points Points array: [x, y, x2, y2, x3, y3, ...]
      * @param int $flag Polyline flag (bit-coded); default is 0: 1 = Closed; 128 = Plinegen
      * @param int $width Polyline width : default = 0
+     * @param int $scale Polyline scale : default  = 1
      * @return $this
      * @see http://help.autodesk.com/cloudhelp/2016/ENU/AutoCAD-DXF/files/GUID-ABF6B778-BE20-4B49-9B58-A94E64CEFFF3.htm
      */
-    public function addPolyline($points, $flag = 0, $width = 0)
+    public function addPolyline($points, $flag = 0, $width = 0, $scale = 1)
     {
         $count = count($points);
         if ($count > 2 && ($count % 2) == 0) {
@@ -631,6 +632,8 @@ class Creator {
                 "AcDbEntity\n" .
                 "8\n" . // Layer name
                 "{$this->layerName}\n" .
+                "48\n" . // Scale of the polyline (default = 1)
+                "{$scale}\n".
                 "100\n" . // Subclass marker (AcDbPolyline)
                 "AcDbPolyline\n" .
                 "90\n" . // Number of vertices
