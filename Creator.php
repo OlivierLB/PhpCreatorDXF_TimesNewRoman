@@ -371,7 +371,6 @@ class Creator {
         $x += $this->offset[0];
         $y += $this->offset[1];
         $z += $this->offset[2];
-        $angle = deg2rad($angle);
         $verticalJustification = $positions[$position][0];
         $horizontalJustification = $positions[$position][1];
         $this->shapes[] = "TEXT\n" .
